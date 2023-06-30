@@ -1,0 +1,236 @@
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #070606;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #070606;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #070606;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #070606;
+  line-height: 150%;
+}
+
+a {
+  line-height: 150%;
+}
+
+.html {
+  color: #FF3335;
+  line-height: 150%;
+}
+
+.css {
+  color: #007DB7;
+  line-height: 150%;
+}
+
+.javascript {
+  color: #FA9D29;
+  line-height: 150%;
+}
+
+.react {
+  color: #61DCFC;
+  line-height: 150%;
+}
+
+.sass {
+  color: #CF679A;
+  line-height: 150%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 1rem;
+}
+.card h3 {
+  margin: 1rem;
+}
+.card div {
+  display: flex;
+  flex-direction: row;
+}
+.card div img {
+  width: 50%;
+  margin: 1rem;
+}
+.card div div {
+  display: block;
+  width: 50%;
+  margin: 1rem;
+}
+.card div div p {
+  margin-bottom: 1rem;
+}
+.card div div .link-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0rem;
+  padding: 0rem;
+}
+.card div div .link-container p {
+  margin: 0rem;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  color: darkgray;
+}
+
+.demo {
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  color: #070606;
+}
+.demo i {
+  color: #00d4ff;
+}
+.demo:hover {
+  color: white;
+  background-color: #00d4ff;
+  border-radius: 5px;
+}
+.demo:hover i {
+  color: white;
+}
+
+.github {
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.2rem;
+  color: #070606;
+}
+.github i {
+  color: #F05033;
+}
+.github:hover {
+  color: white;
+  background-color: #F05033;
+  border-radius: 5px;
+}
+.github:hover i {
+  color: white;
+}
+
+.header-container {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-container div {
+  width: 30%;
+}
+.header-container div img {
+  width: 100%;
+  -webkit-clip-path: circle(47.9% at 50% 50%);
+          clip-path: circle(47.9% at 50% 50%);
+}
+.header-container article {
+  width: 30%;
+}
+.header-container article p {
+  margin: 1rem;
+}
+.header-container article ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem 0rem 1rem 1rem;
+}
+.header-container article ul li i {
+  margin-right: 1rem;
+}
+.header-container article ul li p {
+  margin: 0rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header-container article ul li p span {
+  color: darkgray;
+  font-style: italic;
+}
+
+body {
+  background-image: linear-gradient(to right, #12cd32, #00d4ff);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: #070606;
+  padding: 1rem;
+}
+footer h2 {
+  color: #F8F9F9;
+  padding: 0.5rem 0rem 1rem 0rem;
+  margin: 0rem;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+footer p {
+  color: #F8F9F9;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+footer :nth-child(3) {
+  color: #F8F9F9;
+  text-decoration: none;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+  line-height: 150%;
+}
+footer :nth-child(3) i {
+  color: #F05033;
+}
+footer :nth-child(3):hover {
+  background-color: #F05033;
+  border-radius: 5px;
+}
+footer :nth-child(3):hover i {
+  color: #F8F9F9;
+}
+footer :nth-child(5) {
+  color: #F8F9F9;
+  text-decoration: none;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+  line-height: 150%;
+}
+footer :nth-child(5) i {
+  color: #0078B7;
+}
+footer :nth-child(5):hover {
+  background-color: #0078B7;
+  border-radius: 5px;
+}
+footer :nth-child(5):hover i {
+  color: #F8F9F9;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.header-container {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  div {
+    width: 30%;
+    img {
+      width: 100%;
+      clip-path: circle(47.9% at 50% 50%);
+    }
+  }
+  article {
+    width: 30%;
+    p {
+      margin: $customMargin;
+    }
+    ul {
+      li {
+        display: flex;
+        flex-direction: row;
+        margin: 0rem 0rem $customMargin $customMargin;
+        i {
+          margin-right: $customMargin;
+        }
+        p {
+          margin: 0rem;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          span {
+            color: $inactive;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

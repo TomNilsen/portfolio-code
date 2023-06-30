@@ -1,0 +1,54 @@
+footer {
+    background-color: $blackOnWhite;
+    padding: 1rem;
+    h2 {
+      color: $whiteOnBlack;
+      padding: 0.5rem 0rem 1rem 0rem;
+      margin: 0rem;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+    p {
+      color: $whiteOnBlack;
+      padding: 0.2rem;
+      margin-right: 0.5rem;
+    }
+    :nth-child(3) {
+      color: $whiteOnBlack;
+      text-decoration: none;
+      padding: 0.2rem;
+      margin-right: 0.5rem;
+      line-height: 150%;
+      i {
+        color: $githubColor;
+      }
+      &:hover {
+        background-color: $githubColor;
+        border-radius: 5px;
+        i {
+          color: $whiteOnBlack;
+        }
+      }
+    }
+  
+    :nth-child(5) {
+      color: $whiteOnBlack;
+      text-decoration: none;
+      padding: 0.2rem;
+      margin-right: 0.5rem;
+      line-height: 150%;
+      i {
+        color: $linkedinColor;
+      }
+      &:hover {
+        background-color: $linkedinColor;
+        border-radius: 5px;
+        i {
+          color: $whiteOnBlack;
+        }
+      }
+    }
+  }
+  

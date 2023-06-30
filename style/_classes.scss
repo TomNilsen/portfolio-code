@@ -1,0 +1,99 @@
+.html {
+  color: $htmlColor;
+  line-height: 150%;
+}
+
+.css {
+  color: $cssColor;
+  line-height: 150%;
+}
+
+.javascript {
+  color: $javascriptColor;
+  line-height: 150%;
+}
+
+.react {
+  color: $reactColor;
+  line-height: 150%;
+}
+
+.sass {
+  color: $sassColor;
+  line-height: 150%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 80%;
+  margin: $customMargin;
+  h3 {
+    margin: $customMargin;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 50%;
+      margin: $customMargin;
+    }
+    div {
+      display: block;
+      width: 50%;
+      margin: $customMargin;
+      p {
+        margin-bottom: $customMargin;
+      }
+      .link-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0rem;
+        padding: 0rem;
+        p {
+          margin: 0rem;
+          margin-right: $customMargin;
+          padding: 0.2rem;
+          color: $inactive;
+        }
+      }
+    }
+  }
+}
+
+.demo {
+  text-decoration: none;
+  margin-right: $customMargin;
+  padding: 0.2rem;
+  color: $blackOnWhite;
+  i {
+    color: $demoColor;
+  }
+  &:hover {
+    color: white;
+    background-color: $demoColor;
+    border-radius: 5px;
+    i {
+      color: white;
+    }
+  }
+}
+
+.github {
+  text-decoration: none;
+  margin-right: $customMargin;
+  padding: 0.2rem;
+  color: $blackOnWhite;
+  i {
+    color: $githubColor;
+  }
+  &:hover {
+    color: white;
+    background-color: $githubColor;
+    border-radius: 5px;
+    i {
+      color: white;
+    }
+  }
+}
