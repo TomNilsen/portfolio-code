@@ -22,6 +22,55 @@ export function createCard(project, container) {
   p.innerText = project.desc;
   div2.appendChild(p);
 
+  /* Icons */
+
+  const html = document.createElement("i");
+  html.className = "fa-brands fa-html5 html";
+
+  const css = document.createElement("i");
+  css.className = "fa-brands fa-css3-alt css";
+
+  const javascript = document.createElement("i");
+  javascript.className = "fa-brands fa-js javascript";
+
+  const react = document.createElement("i");
+  react.className = "fa-brands fa-react react";
+
+  const sass = document.createElement("i");
+  sass.className = "fa-brands fa-sass sass";
+
+  const codContainer = document.createElement("ul");
+  codContainer.className = "code-container";
+  div2.appendChild(codContainer);
+
+  const codeLi1 = document.createElement("li");
+  codContainer.appendChild(codeLi1);
+  const codeText1 = document.createElement("p");
+  codeText1.innerText = "Porject stack:";
+  codeLi1.appendChild(codeText1);
+
+  for (let i = 0; i < project.code.length; i++) {
+    let codeLi = document.createElement("li");
+    codContainer.appendChild(codeLi);
+
+    if ((project.code[i] === "HTML")) {
+      codeLi.appendChild(html);
+    } else if ((project.code[i] === "CSS")) {
+      codeLi.appendChild(css);
+    } else if ((project.code[i] === "Javascript")) {
+      codeLi.appendChild(javascript);
+    } else if ((project.code[i] === "React.js")) {
+      codeLi.appendChild(react);
+    } else if ((project.code[i] === "Sass")) {
+      codeLi.appendChild(sass);
+    }
+    let codeText = document.createElement("p");
+    codeText.innerText = project.code[i];
+    codeLi.appendChild(codeText);
+  }
+
+  /* Links */
+
   const linkContainer = document.createElement("div");
   linkContainer.className = "link-container";
   div2.appendChild(linkContainer);

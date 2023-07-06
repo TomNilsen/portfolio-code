@@ -31,6 +31,7 @@ p {
 
 a {
   line-height: 150%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .html {
@@ -83,6 +84,24 @@ a {
 .card div div p {
   margin-bottom: 1rem;
 }
+.card div div .code-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0rem;
+  padding: 0rem;
+}
+.card div div .code-container li {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+.card div div .code-container li:first-child {
+  margin-left: 0rem;
+}
+.card div div .code-container li i {
+  margin-right: 0.3rem;
+}
 .card div div .link-container {
   width: 100%;
   display: flex;
@@ -133,6 +152,10 @@ a {
   color: white;
 }
 
+.tablet-pic {
+  display: none;
+}
+
 .header-container {
   background-color: white;
   padding: 2rem;
@@ -153,6 +176,10 @@ a {
 }
 .header-container article p {
   margin: 1rem;
+}
+.header-container article a {
+  margin: 1rem;
+  text-decoration: none;
 }
 .header-container article ul li {
   display: flex;
@@ -233,4 +260,93 @@ footer :nth-child(5):hover {
 }
 footer :nth-child(5):hover i {
   color: #F8F9F9;
+}
+
+@media screen and (max-width: 768px) {
+  .tablet-pic {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+  }
+  .tablet-pic img {
+    width: 30%;
+    -webkit-clip-path: circle(47.9% at 50% 50%);
+            clip-path: circle(47.9% at 50% 50%);
+  }
+  .header-container div {
+    display: none;
+  }
+  .header-container article {
+    width: 60%;
+  }
+  .header-container .stack {
+    width: 25%;
+  }
+  .card {
+    width: 80%;
+  }
+  .card h3 {
+    text-align: center;
+  }
+  .card div {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0rem auto 0rem auto;
+  }
+  .card div img {
+    width: 100%;
+  }
+  .card div div {
+    width: 100%;
+  }
+  .card div div p {
+    width: 100%;
+  }
+  .card div div .link-container {
+    justify-content: space-around;
+  }
+  .card div div .link-container p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer h2 {
+    text-align: center;
+  }
+  footer div {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .tablet-pic {
+    display: none;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .header-container div {
+    display: block;
+    width: 100%;
+  }
+  .header-container article {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  footer h2 {
+    text-align: center;
+  }
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div .hidden {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

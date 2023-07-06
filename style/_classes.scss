@@ -45,6 +45,24 @@
       p {
         margin-bottom: $customMargin;
       }
+      .code-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 0rem;
+        padding: 0rem;
+        li {
+          &:first-child {
+            margin-left: 0rem;
+          }
+          display: flex;
+          flex-direction: row;
+          margin-left: 1rem;
+          i {
+            margin-right: 0.3rem;
+          }
+        }
+      }
       .link-container {
         width: 100%;
         display: flex;
